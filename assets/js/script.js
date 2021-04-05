@@ -47,7 +47,8 @@ saveBtnArr = [$('#nineBtn'),
               $('#fourBtn'),
               $('#fiveBtn'),];
 
-             
+
+
 
 // Display today's date on page
 $('#currentDay').text(today);
@@ -68,10 +69,59 @@ for(i=0; i<hoursArr.length; i++){
 //save button eventlisteners
 $('#nineBtn').on('click', function(){
   localStorage.setItem('nine oclock task', textAreaNine.val())
-})
+});
 
+$('#tenBtn').on('click', function(){
+  localStorage.setItem('ten oclock task', textAreaTen.val())
+});
+
+$('#elvenBtn').on('click', function(){
+  localStorage.setItem('eleven oclock task', textAreaEleven.val())
+});
+
+$('#twelveBtn').on('click', function(){
+  localStorage.setItem('twelve oclock task', textAreaTwelve.val())
+});
+
+$('#oneBtn').on('click', function(){
+  localStorage.setItem('one oclock task', textAreaOne.val())
+});
+
+$('#twoBtn').on('click', function(){
+  localStorage.setItem('two oclock task', textAreaTwo.val())
+});
+
+$('#threeBtn').on('click', function(){
+  localStorage.setItem('three oclock task', textAreaThree.val())
+});
+
+$('#fourBtn').on('click', function(){
+  localStorage.setItem('four oclock task', textAreaFour.val())
+});
+
+$('#fiveBtn').on('click', function(){
+  localStorage.setItem('five oclock task', textAreaFive.val())
+});
+
+
+
+
+
+
+
+
+
+//Loading Tasks to page
 var loadTasks = function(){
   textAreaNine.val(localStorage.getItem('nine oclock task'));
+  textAreaTen.val(localStorage.getItem('ten oclock task'));
+  textAreaEleven.val(localStorage.getItem('eleven oclock task'));
+  textAreaTwelve.val(localStorage.getItem('twelve oclock task'));
+  textAreaOne.val(localStorage.getItem('one oclock task'));
+  textAreaTwo.val(localStorage.getItem('two oclock task'));
+  textAreaThree.val(localStorage.getItem('three oclock task'));
+  textAreaFour.val(localStorage.getItem('four oclock task'));
+  textAreaFive.val(localStorage.getItem('five oclock task'));
 }
 
 loadTasks();
