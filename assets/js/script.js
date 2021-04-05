@@ -5,6 +5,7 @@ console.log(currentTime);
 //turn currentTime into integer
 currentTimeInt = parseInt(currentTime);
 console.log(currentTimeInt);
+// text area variables
 var textAreaNine = $('#nineTextArea')
 var textAreaTen = $('#tenTextArea')
 var textAreaEleven = $('#elevenTextArea')
@@ -14,8 +15,7 @@ var textAreaTwo = $('#twoTextArea')
 var textAreaThree = $('#threeTextArea')
 var textAreaFour = $('#fourTextArea')
 var textAreaFive = $('#fiveTextArea')
-
-
+//arrays
 hoursArr = [9,
             10,
             11,
@@ -25,7 +25,6 @@ hoursArr = [9,
             15,
             16,
             17];
-console.log(hoursArr);
 
 textAreaArr = [$('#nineTextArea'),
                $('#tenTextArea'),
@@ -36,19 +35,6 @@ textAreaArr = [$('#nineTextArea'),
                $('#threeTextArea'),
                $('#fourTextArea'),
                $('#fiveTextArea')]
-
-saveBtnArr = [$('#nineBtn'),
-              $('#tenBtn'),
-              $('#elevenBtn'),
-              $('#twelveBtn'),
-              $('#oneBtn'),
-              $('#twoBtn'),
-              $('#threeBtn'),
-              $('#fourBtn'),
-              $('#fiveBtn'),];
-
-
-
 
 // Display today's date on page
 $('#currentDay').text(today);
@@ -102,14 +88,6 @@ $('#fourBtn').on('click', function(){
 $('#fiveBtn').on('click', function(){
   localStorage.setItem('five oclock task', textAreaFive.val())
 });
-
-
-
-
-
-
-
-
 
 //Loading Tasks to page
 var loadTasks = function(){
