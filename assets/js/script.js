@@ -5,7 +5,15 @@ console.log(currentTime);
 //turn currentTime into integer
 currentTimeInt = parseInt(currentTime);
 console.log(currentTimeInt);
-
+var textAreaNine = $('#nineTextArea')
+var textAreaTen = $('#tenTextArea')
+var textAreaEleven = $('#elevenTextArea')
+var textAreaTwelve = $('#twelveTextArea')
+var textAreaOne = $('#oneTextArea')
+var textAreaTwo = $('#twoTextArea')
+var textAreaThree = $('#threeTextArea')
+var textAreaFour = $('#fourTextArea')
+var textAreaFive = $('#fiveTextArea')
 
 
 hoursArr = [9,
@@ -29,7 +37,15 @@ textAreaArr = [$('#nineTextArea'),
                $('#fourTextArea'),
                $('#fiveTextArea')]
 
-
+saveBtnArr = [$('#nineBtn'),
+              $('#tenBtn'),
+              $('#elevenBtn'),
+              $('#twelveBtn'),
+              $('#oneBtn'),
+              $('#twoBtn'),
+              $('#threeBtn'),
+              $('#fourBtn'),
+              $('#fiveBtn'),];
 
              
 
@@ -47,4 +63,16 @@ for(i=0; i<hoursArr.length; i++){
   else if(currentTimeInt < hoursArr[i]) {
     textAreaArr[i].addClass('future')
   }
+};
+
+//save button eventlisteners
+$('#nineBtn').on('click', function(){
+  localStorage.setItem('nine oclock task', textAreaNine.val())
+})
+
+var loadTasks = function(){
+  textAreaNine.val(localStorage.getItem('nine oclock task'));
 }
+
+loadTasks();
+  
