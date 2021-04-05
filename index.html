@@ -31,11 +31,11 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <!-- nine o:clock -->
-      <div class="row" id="nine-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="nine-o-clock">
+        <div class="hour">
           <span>9AM</span>
         </div>
-        <textarea class="col-10 task-container border" id="nineTextArea">
+        <textarea class="col-10 task-container description" id="nineTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="nineBtn">
           <i class="far fa-save"></i>
@@ -44,11 +44,11 @@
       <!-- nine o-clock end -->
 
       <!-- ten o:clock -->
-      <div class="row" id="ten-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="ten-o-clock">
+        <div class="hour">
           <span>10AM</span>
         </div>
-        <textarea class="col-10 task-container border" id="tenTextArea">
+        <textarea class="col-10 task-container description" id="tenTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="tenBtn">
           <i class="far fa-save"></i>
@@ -57,11 +57,11 @@
       <!-- ten o-clock end -->
       
       <!-- eleven o:clock -->
-      <div class="row" id="eleven-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="eleven-o-clock">
+        <div class="hour">
           <span>11AM</span>
         </div>
-        <textarea class="col-10 task-container border" id="elevenTextArea">
+        <textarea class="col-10 task-container description" id="elevenTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="elevenBtn">
           <i class="far fa-save"></i>
@@ -70,11 +70,11 @@
       <!-- eleven o-clock end  -->
 
       <!-- twelve o:clock -->
-      <div class="row" id="twelve-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="twelve-o-clock">
+        <div class="hour">
           <span>12PM</span>
         </div>
-        <textarea class="col-10 task-container border" id="twelveTextArea">
+        <textarea class="col-10 task-container description" id="twelveTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="twelveBtn">
           <i class="far fa-save"></i>
@@ -83,11 +83,11 @@
       <!-- twelve o-clock end -->
 
       <!-- one o:clock -->
-      <div class="row" id="one-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="one-o-clock">
+        <div class="hour">
           <span>1PM</span>
         </div>
-        <textarea class="col-10 task-container border" id="oneTextArea">
+        <textarea class="col-10 task-container description" id="oneTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="oneBtn">
           <i class="far fa-save"></i>
@@ -96,11 +96,11 @@
       <!-- one o-clock end -->
     
       <!-- two o:clock -->
-      <div class="row" id="two-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="two-o-clock">
+        <div class="hour">
           <span>2PM</span>
         </div>
-        <textarea class="col-10 task-container border" id="twoTextArea">
+        <textarea class="col-10 task-container description" id="twoTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="twoBtn">
           <i class="far fa-save"></i>
@@ -109,11 +109,11 @@
       <!-- two o-clock end -->
 
       <!-- three o:clock -->
-      <div class="row" id="three-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="three-o-clock">
+        <div class="hour">
           <span>3PM</span>
         </div>
-        <textarea class="col-10 task-container border" id="threeTextArea">
+        <textarea class="col-10 task-container description" id="threeTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="threeBtn">
           <i class="far fa-save"></i>
@@ -122,11 +122,11 @@
       <!-- three o-clock end -->
 
       <!-- four o:clock -->
-      <div class="row" id="four-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="four-o-clock">
+        <div class="hour">
           <span>4PM</span>
         </div>
-        <textarea class="col-10 task-container border" id="fourTextArea">
+        <textarea class="col-10 task-container description" id="fourTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="fourBtn">
           <i class="far fa-save"></i>
@@ -135,11 +135,11 @@
       <!-- four o-clock end -->
 
       <!-- five o:clock -->
-      <div class="row" id="five-o-clock">
-        <div class="justify-content-end pr-1 border border-left-0">
+      <div class="row time-block" id="five-o-clock">
+        <div class="hour">
           <span>5PM</span>
         </div>
-        <textarea class="col-10 task-container border" id="fiveTextArea">
+        <textarea class="col-10 task-container description" id="fiveTextArea">
         </textarea>
         <div class="col-1 saveBtn d-flex justify-content-center align-items-center" id="fiveBtn">
           <i class="far fa-save"></i>
@@ -147,7 +147,7 @@
       </div>
       <!-- five o-clock end -->
     </div>
-
+   
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg==" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
